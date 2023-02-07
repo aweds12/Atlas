@@ -51,10 +51,18 @@ function App() {
 
   const rotateEarth = (lon, lat) => {
     // dms && earthRef.current.rotateY(Math.PI / 180);
-    setDMS({
-      longitude: lon * Math.PI,
-      latitude: (lat * Math.PI) / 180,
-    });
+
+    for (let lo = dms.longitude; lo <= lon; lo++) {
+      setDMS((x) => ({ longitude: lo * Math.PI, ...x }));
+    }
+    for (let la = dms.latitude; la <= lat; la++) {
+      setDMS((y) => ({ ...y, latitude: (la * Math.PI) / 180 }));
+    }
+
+    // setDMS({
+    //   longitude: lon * Math.PI,
+    //   latitude: (lat * Math.PI) / 180,
+    // });
     setAction(true);
   };
 

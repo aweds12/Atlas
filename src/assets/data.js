@@ -93,7 +93,7 @@ export const regions = [
     key: "AX",
     latitude: 60.3385485,
     longitude: 20.2712585,
-    name: "Åland",
+    name: "Aland",
   },
   {
     key: "AZ",
@@ -1257,7 +1257,7 @@ export const regions = [
     key: "ST",
     latitude: 0.18636,
     longitude: 6.613081,
-    name: "São Tomé and Príncipe",
+    name: "Sao Tomé and Príncipe",
   },
   {
     key: "SV",

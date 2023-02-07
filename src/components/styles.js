@@ -131,6 +131,9 @@ export const AppContainer = styled.div`
           height: 3rem;
         }
 
+        &::placeholder {
+          color: #fffb;
+        }
         &:hover {
           border: thin solid #fff;
         }
@@ -191,6 +194,7 @@ export const AppContainer = styled.div`
             text-transform: uppercase;
             margin-bottom: 0.5rem;
             transition: 50ms linear;
+            cursor: pointer;
 
             @media (max-width: 1023px) {
               font-size: 1.5em;
@@ -244,7 +248,8 @@ export const ControlCenter = styled.div`
     height: 1rem;
   }
 
-  input, svg {
+  input,
+  svg {
     cursor: pointer;
   }
 

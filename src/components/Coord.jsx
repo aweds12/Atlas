@@ -14,7 +14,7 @@ const Coord = (props) => {
   return (
     <>
       <pointLight color="#f6f3ea" position={[3, 2, 10]} intensity={1.5} />
-        <ambientLight intensity={.05} />
+      <ambientLight intensity={0.05} />
       <primitive object={gltf.scene} {...props} ref={earthRef} />
 
       {props.orbitControl && (
